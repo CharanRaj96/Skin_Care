@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="/assets/favicon.png" />
+  
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>koreangaze - Checkout - Payment Status</title>
+
+  <!-- Bootstrap -->
+  <link href="../assets/css/stylesheet.css" rel="stylesheet">
+
+  <!-- Google icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-37789107-2', 'auto','myTracker');
+      ga('myTracker.send', 'pageview');
+    </script>
+  <!-- Header hook for plugins ================================================== -->
+  <script src='/assets/storefront.min.js'></script><script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v6.0&autoLogAppEvents=1';fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script><script type="text/javascript">(function(){function asyncLoad(){var urls=["https://apps.easystore.co/instagram-feed/script.js?shop=koreangaze.easy.co","https://apps.easystore.co/timer-discount/script.js?shop=koreangaze.easy.co","/assets/pixel.js?v=1590084419",];for(var i=0;i<urls.length;i++){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=urls[i];var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}}window.attachEvent ? window.attachEvent('onload',asyncLoad) : window.addEventListener('load',asyncLoad,false);})();</script><script>window.__st={"p":"payment_completed"};</script>
+
+  
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript" ></script>
+<script src="/assets/newday/respond.min.js" type="text/javascript" ></script>
+<link href="/assets/newday/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="///search?q=d41d8cd98f00b204e9800998ecf8427e" id="respond-redirect" rel="respond-redirect" />
+<script src="///search?q=d41d8cd98f00b204e9800998ecf8427e" type="text/javascript"></script>
+<![endif]-->
+
+
+
+  <script>ga('create', 'UA-37789107-9', 'auto', 'SFTracker'); ga('SFTracker.set', 'hostname', 'www.koreangaze.com'); ga('SFTracker.send', 'pageview');</script><script>$(document).ready(function(){ $('#AddToCart').click(function(){ga('SFTracker.send','event', 'Cart', 'Add');});$('.update-cart').click(function(){ga('SFTracker.send','event', 'Cart', 'Update');});$('.checkout').click(function(){ga('SFTracker.send','event', 'Checkout', 'Lead');});$('#PlaceOrder,#btn-pay-again').click(function(){ga('SFTracker.send','event', 'Checkout', 'Pay');});});if (window.performance) { var timeSincePageLoad = Math.round(performance.now());ga('SFTracker.send', 'timing', 'JS Dependencies', 'load', timeSincePageLoad);}</script><link rel="stylesheet" href="https://apps.easystore.co/assets/css/instagram-feed/insta-feed-style.css">
+</head>
+<body>
+<style type="text/css">
+body{
+	background-position: top 45px center;
+}
+div#announcementBarTop{
+	height: 45px;
+}
+
+div#announcementBar{
+	position:fixed;top:0px;left:0px;
+	width:100%;
+	padding:0px;
+	margin:0px;
+	z-index:2000;
+	background:transparent;
+	border:0px;
+	boxShadow:none;
+	display:block;
+	opacity:1;
+	font-family: Helvetica, Arial, sans-serif;	font-size:15px;
+}
+
+div#announcementBar>div{
+	width:100%;
+	padding:3px 0px;
+	margin:0px;
+}
+
+div#announcementBar>div>div{
+	margin:0px;
+	padding:6px 10px;
+	border-top:1px dashed transparent;
+	border-bottom:1px dashed transparent;
+}
+
+div#announcementBar>div *{
+	padding:0px;
+	margin:0px;
+	width:auto;
+	background:transparent;
+	color:inherit;	opacity:1;
+	vertical-align:middle;
+	position:static;
+	border:0px;
+	border-radius:0px;
+	box-shadow:none;
+}
+
+div#announcementBar img{
+	cursor:pointer;
+	float:right;
+}
+
+div#announcementBar span{
+	text-align:center;
+	display:block;
+	/*color:#ffffff;*/
+}
+
+div#announcementBar a{
+	padding:3px 8px;
+	vertical-align:baseline;
+	border-radius:3px;
+	margin:0px 10px;
+	opacity:0.9;
+}
+
+div#announcementBar a:hover{
+	opacity:1;
+}
+</style>
+
+<div id="announcementBarTop"></div>
+<div id="announcementBar">
+	<div style="color: #ffffff; background: #db1eb7;">
+		<div style="border-color: #ffffff;">
+			
+			<span>
+				FREE SHIPPING FOR ORDERS ABOVE RM100. DUE TO MCO, POSTAGE ON MONDAY & THURSDAY ONLY
+				
+			</span>
+		</div>
+	</div>
+</div>
+
+
+<script>
+
+(function(){
+
+	var loadScript = function(url, callback){
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		// If the browser is Internet Explorer.
+		if (script.readyState){ 
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" || script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		// For any other browser.
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+		script.src = url;
+		document.getElementsByTagName("head")[0].appendChild(script);
+	};
+
+	var announcementBarAppJS = function($){
+
+		$('#announcementBarTop').css('height', $('#announcementBar').height());
+
+		$('#announcementBar img').on('click', function(){
+			$('#announcementBar, #announcementBarTop').animate({
+            	marginTop	: '-='+$('#announcementBar').height()+'px'
+            }, 200, 'linear');
+		});
+	}
+
+	if(typeof jQuery === 'undefined') {
+		loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js', function(){
+			jQuery = jQuery.noConflict(true);
+			announcementBarAppJS(jQuery);
+		});
+	}else{
+		announcementBarAppJS(jQuery);
+	}
+
+})();
+</script>
+  <div class="wrapper">
+
+
+    <header class="checkout-header margin-top-50">
+        
+          <a class="logo-img-link" href="/">
+            <img src="https://cdn.store-assets.com/s/239857/f/3947712.png" alt="koreangaze" class="logo-img">
+          </a>
+        
+    </header>
+
+
+
+
+    <br/>
+
+
+<div id="cart-mobile" class="hidden-md hidden-lg sm-margin-bottom-20 xs-margin-bottom-20">
+	<a class="show-cart-mobile btn btn-block btn-lg btn-default">
+		<div class="flex-vertical-middle flex-space-between">
+			<span class="cart-toggle-link">Show order summary <i class="margin-left-5 fa fa-angle-down"></i></span>
+
+			
+			<span class="pull-right">RM 152 
+				<span data-amount-include-charge>
+					
+				.00
+					
+		</span> 
+				</span>
+			
+		</div>
+	</a>
+
+	<!-- Cart for mobile -->
+	<div class="cart md-up-margin-top-20" id="cart">
+		
+
+		<ul class="list-unstyled list-style cart-list ">
+			
+			<li class="flex-vertical-middle flex-space-between">
+				<span class="cart-detail-item cart-detail flex-vertical-middle">
+					<span class="badge badge-primary cart-qty">1</span>
+					<div class="cart-img display-inline margin-right-10">
+						<div class="perfect-square-wrap">
+							<img class="perfect-square-img" alt="heimish balm 2.jpg" src="Ceramidin Serum.JPG">
+						</div>
+					</div>
+					
+					<span class="cart-detail-item">
+						 DR.JART+ Ceramidin Serum <br>
+						<div class="color-light size-12 margin-top-5">40 ml</div>
+					</span>
+				</span>
+
+				<span class="cart-detail-item">
+					
+					RM 144.00 
+				</span>
+			</li>
+			
+		</ul>
+
+		<ul class="list-unstyled list-style">
+
+			<li class="flex-vertical-middle flex-space-between border-top margin-top-15">
+				<span>Subtotal</span>
+				<span>RM 144.00 </span>
+			</li>
+
+			
+
+			
+
+				
+					<li class="flex-vertical-middle flex-space-between">
+						<span>Shipping</span>
+						<span>RM <span class="modifyNumberFormat">8</span> </span>
+					</li>
+				
+
+				
+					
+				
+
+				
+					
+					
+
+					
+					
+
+				
+
+				
+					<li class="flex-vertical-middle flex-space-between  border-top margin-top-15">
+						<span class="color-primary">Total</span>
+						<span>
+							<span class="color-light weight-light">RM</span>
+							<span class="color-primary weight-bold size-20" data-amount-include-charge>
+								
+									152.00
+								
+							</span>
+							<span class="color-light weight-light"></span>
+						</span>
+					</li>
+
+					
+					
+
+					
+				
+
+			
+
+		</ul>
+
+		
+		<div class="form-group margin-top-20">
+			<textarea class="form-control remark mobile-remark" placeholder="Add a remark..."  disabled ></textarea>
+		</div>
+
+		
+		
+			
+
+		    
+		
+		
+		
+	</div>
+</div>
+
+<div class="side-wrap">
+	<div class="side-left">
+		<div class="left-container">
+
+			<!--================ Successful transaction -->
+			<div class="row text-center">
+
+				
+				<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 172 172"
+					style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g><path d="M86,165.55c-43.8643,0 -79.55,-35.6857 -79.55,-79.55c0,-43.8643 35.6857,-79.55 79.55,-79.55c43.8643,0 79.55,35.6857 79.55,79.55c0,43.8643 -35.6857,79.55 -79.55,79.55z" fill="#489aea"></path><path d="M86,8.6c42.6775,0 77.4,34.7225 77.4,77.4c0,42.6775 -34.7225,77.4 -77.4,77.4c-42.6775,0 -77.4,-34.7225 -77.4,-77.4c0,-42.6775 34.7225,-77.4 77.4,-77.4M86,4.3c-45.1199,0 -81.7,36.5801 -81.7,81.7c0,45.1199 36.5801,81.7 81.7,81.7c45.1199,0 81.7,-36.5801 81.7,-81.7c0,-45.1199 -36.5801,-81.7 -81.7,-81.7z" fill="#1890d9"></path><g fill="#ffffff"><path d="M68.9075,120.486l-29.7001,-29.7001l9.1246,-9.1203l20.5755,20.5755l51.9999,-51.9999l9.1246,9.1203z">
+				</path></g></g></g></svg>
+			</div>
+
+			<hr class="margin-top-40 margin-bottom-40">
+			<!-- Successful transaction ends ====================-->
+
+			
+			
+
+			
+
+			
+			
+			<div>
+				<div class="row">
+					<div class="col-sm-6 text-break">
+						
+						<h5 class="margin-top-0 weight-xbold">Shipping address</h5>
+
+						  
+						<div>FARAH HADIRA UYAINA AZMAN</div>
+						<div>ayu.azman98@gmail.com</div>
+						<div></div>
+						<div>NO 38 JALAN TARIF SATU 23/8A</div>
+						<div>Seksyen 23</div>
+						<div>40300, SHAH ALAM, Selangor</div>
+						<div>Malaysia</div>
+						<div>+60132689335</div>
+
+						
+					</div>
+
+					<div class="xs-margin-top-40 col-sm-6 text-break">
+						<h5 class="margin-top-0 weight-xbold">Billing address</h5>
+						  
+						<div>FARAH HADIRA UYAINA AZMAN</div>
+						<div>ayu.azman98@gmail.com</div>
+						<div></div>
+						<div>NO 38 JALAN TARIF SATU 23/8A</div>
+						<div>Seksyen 23</div>
+						<div>40300, SHAH ALAM, Selangor</div>
+						<div>Malaysia</div>
+						<div>+60132689335</div>
+					</div>
+				</div>
+
+				<div class="row">
+					
+					<div class="margin-top-40 col-sm-6 text-break">
+						<h5 class="margin-top-0 weight-xbold">Shipping method</h5>
+						<div>
+							Flat Rate RM8(SEMENANJUNG)
+						</div>
+					</div>
+					
+
+					<div class="margin-top-40 col-sm-6 text-break">
+						<h5 class="margin-top-0 weight-xbold">Billing method</h5>
+						<div>
+							PAY NOW (ONLINE BANKING)
+						</div>
+					</div>
+				</div>
+				
+				
+
+			</div>
+			<div data-app-purchase="{&quot;id&quot;:8181100,&quot;has_discounts&quot;:false,&quot;customer_id&quot;:3343928,&quot;number&quot;:1472,&quot;order_number&quot;:&quot;#1472&quot;,&quot;currency&quot;:&quot;MYR&quot;,&quot;currency_rate&quot;:&quot;1.0&quot;,&quot;total_line_items_price&quot;:&quot;7.00&quot;,&quot;total_discount&quot;:&quot;0.00&quot;,&quot;custom_discount&quot;:&quot;0.00&quot;,&quot;subtotal_price&quot;:&quot;7.00&quot;,&quot;total_shipping&quot;:&quot;8.00&quot;,&quot;total_tax&quot;:&quot;0.0&quot;,&quot;shipping_tax&quot;:&quot;0.00&quot;,&quot;total_price&quot;:&quot;15.00&quot;,&quot;total_amount_include_transaction&quot;:&quot;15.00&quot;,&quot;transaction_charge_fee&quot;:&quot;0.00&quot;,&quot;transaction_charge_rate&quot;:&quot;0.00&quot;,&quot;transaction_charge_rate_fee&quot;:&quot;0.00&quot;,&quot;credit_used&quot;:&quot;0.0&quot;,&quot;credit_earn&quot;:&quot;0.0&quot;,&quot;order_item_total_discount&quot;:&quot;0.00&quot;,&quot;pg_type_rate&quot;:0,&quot;taxes_included&quot;:false,&quot;discount_code&quot;:null,&quot;order_discount_id&quot;:null,&quot;credit_voucher_code&quot;:null,&quot;credit_order_discount_id&quot;:null,&quot;note&quot;:null,&quot;note_attributes&quot;:null,&quot;remark&quot;:&quot;&quot;,&quot;token&quot;:&quot;0636f524-a3a5-40fc-9683-ad0bed475899&quot;,&quot;cart_token&quot;:&quot;fe1d55ef-f918-44f5-933a-da63150691bd&quot;,&quot;source_name&quot;:&quot;SF&quot;,&quot;browser_ip&quot;:&quot;60.51.73.78&quot;,&quot;landing_site&quot;:&quot;\/&quot;,&quot;referring_site&quot;:null,&quot;fulfillment_status&quot;:&quot;unfulfilled&quot;,&quot;financial_status&quot;:&quot;paid&quot;,&quot;is_processed&quot;:true,&quot;is_archived&quot;:false,&quot;is_cancelled&quot;:false,&quot;is_completed&quot;:1,&quot;processed_at&quot;:&quot;2020-06-14T18:40:30.000+08:00&quot;,&quot;cancelled_at&quot;:null,&quot;closed_at&quot;:null,&quot;archived_at&quot;:null,&quot;created_at&quot;:&quot;2020-06-14T18:40:05.000+08:00&quot;,&quot;updated_at&quot;:&quot;2020-06-14T18:42:16.000+08:00&quot;,&quot;payment_status&quot;:false,&quot;user_id&quot;:null,&quot;total_item_weight&quot;:0,&quot;total_item_quantity&quot;:1,&quot;shipping_id&quot;:122501,&quot;store_app_id&quot;:null,&quot;shipping_method_name&quot;:&quot;Flat Rate RM8(SEMENANJUNG)&quot;,&quot;order_tax&quot;:null,&quot;order_item&quot;:[{&quot;id&quot;:17662082,&quot;order_id&quot;:8181100,&quot;product_id&quot;:3581872,&quot;product_name&quot;:&quot;HEIMISH All Clean Balm 5ml \/ 120ml&quot;,&quot;variant_id&quot;:16410686,&quot;variant_name&quot;:&quot;5ml&quot;,&quot;discount_id&quot;:null,&quot;sku&quot;:null,&quot;barcode&quot;:null,&quot;price&quot;:7,&quot;subtotal&quot;:7,&quot;total_discount&quot;:0,&quot;grams&quot;:&quot;0.0&quot;,&quot;quantity&quot;:1,&quot;taxable&quot;:false,&quot;shipping_required&quot;:true,&quot;total_tax&quot;:&quot;0.0&quot;,&quot;created_at&quot;:&quot;2020-06-14T18:40:05.000+08:00&quot;,&quot;item_image&quot;:{&quot;id&quot;:14805079,&quot;store_id&quot;:239857,&quot;product_id&quot;:3581872,&quot;format_type&quot;:&quot;Images&quot;,&quot;youtube_id&quot;:null,&quot;position&quot;:1,&quot;extension&quot;:&quot;jpeg&quot;,&quot;url&quot;:&quot;https:\/\/s3.ap-southeast-1.amazonaws.com\/cdn.store-assets.com\/s\/239857\/i\/14805079.jpeg&quot;,&quot;size&quot;:72777,&quot;height&quot;:1000,&quot;width&quot;:1000,&quot;title&quot;:&quot;heimish balm 2.jpg&quot;,&quot;is_deleted&quot;:false,&quot;deleted_at&quot;:null,&quot;s3_deleted&quot;:false,&quot;s3_deleted_at&quot;:null,&quot;created_at&quot;:&quot;2020-06-03T11:00:58.000+08:00&quot;},&quot;handle&quot;:&quot;heimish-all-clean-balm-5ml---120ml&quot;,&quot;collections&quot;:&quot;Feature on homepage,PORE CARE(24 HOURS SALE)&quot;,&quot;brands&quot;:null}],&quot;cod_type&quot;:0,&quot;transaction_records&quot;:[],&quot;shipping_warning&quot;:null,&quot;pickup_warning&quot;:null,&quot;cod_warning&quot;:null,&quot;item_taxable&quot;:false}"></div>
+			
+		</div>
+	</div>
+
+	<div class="side-right">
+		<div id="cart">
+	<div class="cart" >
+		
+		
+
+		<ul class="list-unstyled list-style cart-list ">
+
+			
+			<li class="flex-vertical-middle flex-space-between">
+				<span class="cart-detail-item cart-detail flex-vertical-middle">
+					<span class="badge badge-primary cart-qty">1</span>
+					<div class="cart-img display-inline margin-right-10">
+						<div class="perfect-square-wrap">
+							<img class="perfect-square-img" alt="heimish balm 2.jpg" src="Ceramidin Serum.JPG">
+						</div>
+					</div>
+					
+					<span class="cart-detail-item">
+						 DR.JART+ Ceramidin Serum <br>
+						<div class="color-light size-12 margin-top-5">40 ml</div>
+					</span>
+				</span>
+
+				<span class="cart-detail-item">
+					
+					RM 144.00 
+					
+				</span>
+
+			</li>
+			
+		</ul>
+
+		<ul class="list-unstyled list-style margin-bottom-0">
+
+			<li class="flex-vertical-middle flex-space-between border-top margin-top-15">
+				<span>Subtotal</span>
+				<span>RM 144.00 </span>
+			</li>
+			
+			
+
+			
+				
+				
+					<li class="flex-vertical-middle flex-space-between">
+						<span>Shipping</span>
+						<span>RM <span class="modifyNumberFormat">8</span> </span>
+					</li>
+				
+
+				
+					
+				
+
+				
+					
+					
+
+					
+					
+
+				
+
+				
+					<li class="flex-vertical-middle flex-space-between border-top margin-top-15">
+						<span class="color-primary">Total</span>
+						<span>
+							<span class="color-light weight-light">RM</span>
+							<span class="color-primary weight-bold size-20" data-amount-include-charge>
+								
+									152.00
+								
+							</span>
+							<span class="color-light weight-light"></span>
+						</span>
+					</li>
+
+					
+					
+
+					
+
+				
+
+			
+		</ul>
+	</div>
+
+	
+	<div class="form-group margin-top-20">
+		<textarea class="form-control remark desktop-remark" name="remark" placeholder="Add a remark..."  disabled ></textarea>
+	</div>
+
+	
+	
+		
+
+
+		
+	
+	
+	
+</div>
+
+
+	</div>
+</div>
+
+
+<script src="/assets/js/dropzone/dropzone.js"></script>
+<link rel="stylesheet" href="../assets/css/dropzone.css"/assets/css/dropzone.css"">
+
+<script>
+	
+	$(function(){
+
+		setCookie("es_order_processed", 0, -1);
+
+		var xhr = $.ajax();
+		var ref_number = "ydwddlq3";
+
+		// Dropzone
+		var	dropzone_placeholder = '<svg class="svg-icon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>icon-upload</title><path d="M19.33,9.77A5.8,5.8,0,0,0,8.48,7.36a2.87,2.87,0,0,0-1.54-.44A2.92,2.92,0,0,0,4,9.82a4.16,4.16,0,0,0,1.49,8.05H9.12a.65.65,0,1,0,0-1.3H5.51a2.86,2.86,0,0,1-.65-5.65l.61-.14-.12-.62a1.66,1.66,0,0,1,0-.32,1.62,1.62,0,0,1,2.88-1l.72.88.4-1.07a4.51,4.51,0,0,1,8.73,1.57L18,11l.64,0a2.79,2.79,0,0,1-.11,5.57H14.69a.65.65,0,0,0,0,1.3h3.87a4.09,4.09,0,0,0,.77-8.1Z"/><path d="M11.93,21.32a.65.65,0,0,0,.65-.65V13.73l1.08,1.09a.7.7,0,0,0,.46.19.66.66,0,0,0,.46-.19.64.64,0,0,0,0-.92l-2.19-2.2h0l-.45-.46-.46.46h0l-2.2,2.2a.65.65,0,0,0,.92.92l1.09-1.09v6.94A.65.65,0,0,0,11.93,21.32Z"/></svg><div>Tap to upload</div>',
+				close_icon = '<svg class="close-icon" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.29,19.71a1,1,0,0,0,1.42,0L12,13.41l6.29,6.3a1,1,0,0,0,1.42,0,1,1,0,0,0,0-1.42L13.41,12l6.3-6.29a1,1,0,1,0-1.42-1.42L12,10.59,5.71,4.29A1,1,0,0,0,4.29,5.71L10.59,12l-6.3,6.29A1,1,0,0,0,4.29,19.71Z"/></svg>';
+
+		var attachments = JSON.parse('[]');
+
+		if($("#dropzone").is(":visible")){	// Run only when dropzone is visible
+			Dropzone.options.dropzone = false;
+
+			var my_dropzone = new Dropzone("div#dropzone", { 
+				url: "/account/orders/attachment/upload",
+				params: {
+					"_token": "2MODBVClD2fuynvdNnaAhh2F1I6HBqrYPHXQHrLt",
+					"order_token": "0636f524-a3a5-40fc-9683-ad0bed475899",
+					"source": "checkout"
+				},
+				maxFiles: 1,
+				maxFilesize: 10,
+				addRemoveLinks: true,
+				dictRemoveFile: close_icon,
+				dictCancelUpload: null,
+				dictDefaultMessage: dropzone_placeholder,
+				dictRemoveFileConfirmation: "Do you really want to delete this attachment?",
+				init: function() {
+					this.on("success", function(file, response) {
+						if(response.status == "success"){
+							file.id = response.data.id;
+							file.order_id = response.data.order_id;
+
+							// Enter edit mode
+							trigger_edit_mode();
+						}
+						else{
+							this.removeFile(file);
+							$("#error_message").empty().append(response.data).show();
+						}
+					});
+					this.on("removedfile", function(file) { 
+						var id = file.id;
+						var order_id = file.order_id;
+
+						if(id){
+							xhr = $.ajax({
+								url: "/account/orders/attachment/"+id,
+								type: 'delete',
+								dataType: "json",
+								data: {
+									order_token: "0636f524-a3a5-40fc-9683-ad0bed475899",
+									order_id: order_id,
+									source: "checkout",
+									_token: "2MODBVClD2fuynvdNnaAhh2F1I6HBqrYPHXQHrLt"
+								},
+								beforeSend: function(){
+									xhr.abort();
+								},
+								success: function(res){
+									if(res.status == "success"){
+										$("#success_message").empty().append("<p>Attachment deleted successfully</p>").show();
+									}
+									else{
+										$("#error_message").empty().append("<p>Failed to delete attachment</p>").show();
+									}
+								},
+								fail: function(){
+									$("#error_message").empty().append("<p>Failed to delete attachment</p>").show();
+								}
+							});
+						}
+					});
+					this.on("maxfilesexceeded", function(file) { 
+						this.removeFile(file);
+						$("#error_message").empty().append("<p>Attachment exceeded maximum limit</p>").show();
+					});
+					this.on("reset", function() { 
+						this.options.maxFiles = 1;
+					});
+
+					list_thumbnail(this);
+				}
+			});
+
+			function list_thumbnail(dz){
+				var file_count = 0;
+				for (var i = 0; i < attachments.length; i++) {
+
+					let mock_file = {
+						id: attachments[i].id, 
+						order_id: attachments[i].order_id,
+						name: attachments[i].title, 
+						size: attachments[i].size, 
+						url: attachments[i].url, 
+						dataURL: attachments[i].url
+					};
+
+					dz.emit("addedfile", mock_file);
+
+					var img_url = mock_file.url;
+
+					dz.createThumbnailFromUrl(
+						mock_file, 
+						dz.options.thumbnailWidth, 
+						dz.options.thumbnailHeight,
+						dz.options.thumbnailMethod, 
+						true, 
+						function (img_url) {
+							dz.emit('thumbnail', mock_file, img_url);
+						}, 
+						'anonymous'
+						);
+
+					dz.emit("complete", mock_file);
+
+					dz.files.push(mock_file);
+
+					file_count++;
+				}
+
+				dz.options.maxFiles = dz.options.maxFiles - file_count;
+			}
+		}
+		// End of Dropzone
+
+		// Submit
+		$("#submit_reference").on("click", function(){
+			var reference_id = $("input[name='reference_id']").val();
+			var c_token = "fe1d55ef-f918-44f5-933a-da63150691bd";
+			var t_id = getUrlParameter("t_id");
+
+			var order_token = "0636f524-a3a5-40fc-9683-ad0bed475899";
+			var img_id_arr = [];
+
+			for(var i = 0; i < my_dropzone.files.length; i++){
+				if(my_dropzone.files[i].id){
+					img_id_arr.push(my_dropzone.files[i].id);
+				}
+			}
+
+			if(!reference_id && img_id_arr.length < 1){
+				$("#error_message").empty().append("<p>Please upload receipt or key-in reference ID</p>").show();
+				$('#submit_reference').prop("disabled", false).removeClass('btn-loading');
+			}
+			else{
+
+				xhr = $.ajax({
+					url: "/payments/reference_with_attachment",
+					type: 'post',
+					dataType: "json",
+					data: {
+						cart_token: c_token,
+						transaction_id: t_id,
+						reference_id: reference_id,
+						order_token: order_token,
+						img_id: img_id_arr.length > 0 ? JSON.stringify(img_id_arr) : [],
+						source: "checkout",
+						_token: "2MODBVClD2fuynvdNnaAhh2F1I6HBqrYPHXQHrLt"
+					},
+					beforeSend: function(){
+						xhr.abort();
+						$("#submit_reference").prop("disabled", true).addClass('btn-loading');
+						$("#cancel_edit").prop('disabled', true);
+						$("#success_message").hide().empty();
+						$("#error_message").hide().empty();
+					},
+					success: function(res, textStatus, jqXHR){
+						var attachment_result = res.attachment_result;
+						var reference_result = res.reference_result;
+
+						// Attachment
+						if(attachment_result.status){
+							if(attachment_result.status == "success"){
+								for(var i = 0; i < my_dropzone.files.length; i++){
+									my_dropzone.files[i].order_id = "8181100";
+								}
+
+								$("#success_message").empty().append("<p>Receipt has been successfully uploaded</p>").show();
+							}
+							else{
+								if(attachment_result.data.errors.Attachment_Are_Linked){
+									$("#success_message").empty().append("<p>Receipt has been successfully uploaded</p>").show();
+								}
+								else{
+									$("#error_message").empty().append("<p>Failed to upload receipt</p>").show();
+								}
+							}
+						}
+
+						// Reference
+						if(reference_result.status){
+							if(reference_result.status == "success"){
+								ref_number = reference_id;
+								$("#success_message").append("<p>Reference ID has been successfully updated</p>").show();
+							}
+							else{
+								$("#error_message").append("<p>Failed to update reference ID</p>").show();
+							}
+						}
+
+						// UI
+						if($("#error_message").is(":visible")){
+							$("#submit_reference").prop("disabled", false).removeClass('btn-loading');
+						}
+						else{
+							$("#submit_reference").addClass('hide').prop("disabled", false).removeClass('btn-loading');
+							$("#btn_back_to_store").removeClass('hide');
+							$("input[name='reference_id']").prop("disabled", true);
+							$("#edit_reference").removeClass('hide');
+							$("#cancel_edit").prop('disabled', false).addClass('hide');
+						}
+					},
+					fail: function(){
+						$("#error_message").empty().append("<p>Failed to delete attachment</p><p>Failed to update reference ID</p>").show();
+					},
+					error: function(){
+						$("#error_message").empty().append("<p>Failed to delete attachment</p><p>Failed to update reference ID</p>").show();
+					}
+				});
+			}
+		});
+
+		$("#edit_reference").on("click", function(){
+			trigger_edit_mode();
+		});
+
+		$("#cancel_edit").on("click", function(){
+			cancel_edit_mode();
+		});
+
+		function trigger_edit_mode(){
+			$("#edit_reference").addClass('hide');
+			$("#success_message").hide().empty();
+			$("#error_message").hide().empty();
+			$("#btn_back_to_store").addClass('hide');
+			$("input[name='reference_id']").prop("disabled", false);
+			$("#submit_reference").removeClass("hide");
+			$("#cancel_edit").prop("disabled", false).removeClass("hide");
+		}
+
+		function cancel_edit_mode(){
+			$("#cancel_edit").prop("disabled", false).addClass('hide');
+			$("#error_message").hide().empty();
+			$("#submit_reference").addClass('hide');
+			$("input[name='reference_id']").val(ref_number).prop("disabled", true);
+			$("#btn_back_to_store").removeClass('hide');
+			$("#edit_reference").removeClass('hide');
+		}
+
+		var getUrlParameter = function getUrlParameter(sParam) {
+			var sPageURL = window.location.search.substring(1),
+			sURLVariables = sPageURL.split('&'),
+			sParameterName,
+			i;
+
+			for (i = 0; i < sURLVariables.length; i++) {
+				sParameterName = sURLVariables[i].split('=');
+
+				if (sParameterName[0] === sParam) {
+					return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+				}
+			}
+		};
+
+		function setCookie(cname, cvalue, exdays) {
+			var d = new Date();
+			d.setTime(d.getTime() + (exdays*24*60*60*1000));
+			var expires = "expires="+ d.toUTCString();
+			document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+		}
+	});
+
+</script>
+
+
+
+
+
+
+
+
+
+    <footer class="margin-top-20 size-12 color-light padding-top-20 margin-bottom-30 width-full">
+      &copy; All rights reserved koreangaze
+      
+
+      
+
+      <span class="sm-up-pull-right footer-links">
+        
+          <a target="_blank" href="/legal/terms-of-service">Terms of Service</a>
+              
+          <a target="_blank" href="/legal/privacy-policy">Privacy Policy</a>
+              
+          <a target="_blank" href="/legal/refund-policy">Refund Policy</a>
+              
+        
+        
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        
+      </span>
+
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="/assets/js/breakpoints/breakpoints.min.js"></script>
+  <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="/assets/js/sticky-kit/jquery.sticky-kit.min.js"></script>
+
+
+
+
+  <!-- Stick the cart -->
+  <script>
+    $(document).ready(function() {
+          $(".side-right #cart").stick_in_parent({
+              'inner_scrolling': false,
+              'no_recalc': true
+      });
+      });
+
+    jQuery( window ).on ( 'resize', function() {
+        jQuery(document.body).trigger("sticky_kit:recalc");
+    });
+  </script>
+
+
+
+  <!-- Move the cart (for responsive) -->
+  <script>
+
+    $(".show-cart-mobile").on("click",function(){
+      $("#cart-mobile .cart").toggle();
+    })
+
+  </script>
+
+  <script>
+    $(".remark").on("input", function(){
+      if($(this).hasClass("desktop-remark")){
+        $(".mobile-remark").val($(this).val());
+      }
+      else{
+        $(".desktop-remark").val($(this).val());
+      }
+    });
+  </script>
+
+  <!-- Discount code -->
+  <script>
+    $(".btn-discount").on("click",function(){
+
+      var discount_code = $(this).closest(".input-group").find("input[name=discount_code]").val();
+      var cart_token = "fe1d55ef-f918-44f5-933a-da63150691bd";
+
+      $.ajax({
+        type: 'post',
+        url: "/checkout/discount",
+        dataType: "json",
+        data: {
+          discount_code: discount_code,
+          token: cart_token,
+          _token: "2MODBVClD2fuynvdNnaAhh2F1I6HBqrYPHXQHrLt"
+        },
+        success: function(d){
+
+          if(d.status == "success"){
+            location.reload();
+          }else{
+            $(".discount-error").text(d.data);
+            $(".discount-error").css("color", "#a94442")
+          }
+
+        },
+        error: function(d){
+          console.log("error");
+        }
+      });
+      return false;
+    });
+
+    $(".btn-del-discount").on("click",function(){
+      var order_discount_id = $(this).data("order-discount-id");
+      var cart_token = "fe1d55ef-f918-44f5-933a-da63150691bd";
+      $.ajax({
+        type: 'delete',
+        url: '/checkout/discount-remove',
+        dataType: "json",
+        data: {
+          order_discount_id: order_discount_id,
+          token: cart_token,
+          _token: "2MODBVClD2fuynvdNnaAhh2F1I6HBqrYPHXQHrLt"
+        },
+        success: function(d){
+          location.reload();
+        },
+        error: function(d){
+          console.log("error");
+        }
+      });
+      return false;
+    });
+
+    $(".btn-credit").on("click",function(){
+      var html = $(this).html();
+            $.ajax({
+                type: 'post',
+                url: '/checkout/credit',
+                dataType: "json",
+                data: {
+                     _token: "2MODBVClD2fuynvdNnaAhh2F1I6HBqrYPHXQHrLt"
+                },
+                beforeSend: function(){
+                  $(".btn-credit").html("").prop("disabled", true).addClass("fa fa-spinner");
+                },
+                success: function(d){
+                  location.reload();
+                },
+                error: function(d){
+                  $(".btn-credit").html(html).prop("disabled", false).removeClass("fa fa-spinner");
+                    console.log("error");
+                }
+            });
+            return false;
+        });
+
+        $(".btn-del-credit").on("click",function(){
+            $.ajax({
+                type: 'delete',
+                url: '/checkout/credit-remove',
+                dataType: "json",
+                data: {
+                     _token: "2MODBVClD2fuynvdNnaAhh2F1I6HBqrYPHXQHrLt"
+                },
+                success: function(d){
+                    location.reload();
+                },
+                error: function(d){
+                    console.log("error");
+                }
+            });
+            return false;
+        });
+
+  </script>
+
+  <script>
+    $("span.modifyNumberFormat").each(function(key, value) {
+      var content = $(value).html();
+      if (isNaN(content)) {
+        return false;
+      } else {
+        $(value).html(normalizeNumber(content));
+      }
+    });
+    $("span.modifyNumberFormatWithAffix").each(function(key, value) {
+      var content = $(value).html();
+      if (isNaN(content)) {
+        return false;
+      } else {
+        var currency_prefix = "RM" == '' ? '' : "RM ";
+        var currency_suffix = "" == '' ? '' : " ";
+        $(value).html( currency_prefix + normalizeNumber(content) + currency_suffix );
+      }
+    });
+    function normalizeNumber(value){
+      var format_decimals = "2";
+      var thousand_separator = ",";
+
+      if(thousand_separator=="" || thousand_separator==null){
+        var decimal_separator = ".";
+      }
+      else{
+        var decimal_separator = thousand_separator=="," ? "." : ",";
+      }
+
+      var amount = value;
+
+      if(thousand_separator == "," && amount.indexOf(thousand_separator) != -1){
+        var amount_after_split = amount.split(thousand_separator);
+        amount = amount_after_split[0] + amount_after_split[1];
+      }
+
+      return amendNumberFormat(parseFloat(amount).toFixed(format_decimals), thousand_separator, decimal_separator);
+    }
+    function amendNumberFormat(g,h,i){
+      g += '';
+      x = g.split('.');
+      x1 = x[0];
+      x2 = x.length > 1 ? i + x[1] : '';
+      var rgx = /(\d+)(\d{3})/;
+      while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+      }
+      x1 = x1.replace(/,/g, h);
+      return x1 + x2;
+    }
+  </script>
+<script>
+		$(".product-label-badge").parent().find(".badge--sale").remove();
+		</script>
+
+		<style>
+		.product-label-badge-text {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 2px 8px 0;
+			border-radius: 50%;
+		}
+		.product-label-badge{
+			display: table;
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			font-weight: bold;
+			text-align: center;
+			font-size: .75em;
+			line-height: 1.1;
+			z-index: 10;
+		}
+
+		.product-label-position{
+			top: -12px;
+			right: -12px;
+		}
+		</style>
+</body>
+</html>

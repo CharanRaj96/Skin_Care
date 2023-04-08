@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="icon" href="/assets/favicon.png" />
+  
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>koreangaze - Checkout - Payment method</title>
+
+  <!-- Bootstrap -->
+  <link href="../assets/css/stylesheet.css" rel="stylesheet">
+
+  <!-- Google icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-37789107-2', 'auto','myTracker');
+      ga('myTracker.send', 'pageview');
+    </script>
+  <!-- Header hook for plugins ================================================== -->
+  <script src='/assets/storefront.min.js'></script><script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v6.0&autoLogAppEvents=1';fjs.parentNode.insertBefore(js,fjs);}(document,'script','facebook-jssdk'));</script><script type="text/javascript">(function(){function asyncLoad(){var urls=["https://apps.easystore.co/instagram-feed/script.js?shop=koreangaze.easy.co","https://apps.easystore.co/timer-discount/script.js?shop=koreangaze.easy.co","/assets/pixel.js?v=1590084419",];for(var i=0;i<urls.length;i++){var s=document.createElement('script');s.type='text/javascript';s.async=true;s.src=urls[i];var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}}window.attachEvent ? window.attachEvent('onload',asyncLoad) : window.addEventListener('load',asyncLoad,false);})();</script><script>window.__st={"p":"checkout_payment"};</script>
+
+  
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript" ></script>
+<script src="/assets/newday/respond.min.js" type="text/javascript" ></script>
+<link href="/assets/newday/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+<link href="///search?q=d41d8cd98f00b204e9800998ecf8427e" id="respond-redirect" rel="respond-redirect" />
+<script src="///search?q=d41d8cd98f00b204e9800998ecf8427e" type="text/javascript"></script>
+<![endif]-->
+
+
+
+  <script>ga('create', 'UA-37789107-9', 'auto', 'SFTracker'); ga('SFTracker.set', 'hostname', 'www.koreangaze.com'); ga('SFTracker.send', 'pageview');</script><script>$(document).ready(function(){ $('#AddToCart').click(function(){ga('SFTracker.send','event', 'Cart', 'Add');});$('.update-cart').click(function(){ga('SFTracker.send','event', 'Cart', 'Update');});$('.checkout').click(function(){ga('SFTracker.send','event', 'Checkout', 'Lead');});$('#PlaceOrder,#btn-pay-again').click(function(){ga('SFTracker.send','event', 'Checkout', 'Pay');});});if (window.performance) { var timeSincePageLoad = Math.round(performance.now());ga('SFTracker.send', 'timing', 'JS Dependencies', 'load', timeSincePageLoad);}</script><link rel="stylesheet" href="https://apps.easystore.co/assets/css/instagram-feed/insta-feed-style.css">
+</head>
+<body>
+<style type="text/css">
+body{
+	background-position: top 45px center;
+}
+div#announcementBarTop{
+	height: 45px;
+}
+
+div#announcementBar{
+	position:fixed;top:0px;left:0px;
+	width:100%;
+	padding:0px;
+	margin:0px;
+	z-index:2000;
+	background:transparent;
+	border:0px;
+	boxShadow:none;
+	display:block;
+	opacity:1;
+	font-family: Helvetica, Arial, sans-serif;	font-size:15px;
+}
+
+div#announcementBar>div{
+	width:100%;
+	padding:3px 0px;
+	margin:0px;
+}
+
+div#announcementBar>div>div{
+	margin:0px;
+	padding:6px 10px;
+	border-top:1px dashed transparent;
+	border-bottom:1px dashed transparent;
+}
+
+div#announcementBar>div *{
+	padding:0px;
+	margin:0px;
+	width:auto;
+	background:transparent;
+	color:inherit;	opacity:1;
+	vertical-align:middle;
+	position:static;
+	border:0px;
+	border-radius:0px;
+	box-shadow:none;
+}
+
+div#announcementBar img{
+	cursor:pointer;
+	float:right;
+}
+
+div#announcementBar span{
+	text-align:center;
+	display:block;
+	/*color:#ffffff;*/
+}
+
+div#announcementBar a{
+	padding:3px 8px;
+	vertical-align:baseline;
+	border-radius:3px;
+	margin:0px 10px;
+	opacity:0.9;
+}
+
+div#announcementBar a:hover{
+	opacity:1;
+}
+</style>
+
+<div id="announcementBarTop"></div>
+<div id="announcementBar">
+	<div style="color: #ffffff; background: #db1eb7;">
+		<div style="border-color: #ffffff;">
+			
+			<span>
+				FREE SHIPPING FOR ORDERS ABOVE RM100. DUE TO MCO, POSTAGE ON MONDAY & THURSDAY ONLY
+				
+			</span>
+		</div>
+	</div>
+</div>
+
+
+<script>
+
+(function(){
+
+	var loadScript = function(url, callback){
+		var script = document.createElement("script");
+		script.type = "text/javascript";
+		// If the browser is Internet Explorer.
+		if (script.readyState){ 
+			script.onreadystatechange = function(){
+				if (script.readyState == "loaded" || script.readyState == "complete"){
+					script.onreadystatechange = null;
+					callback();
+				}
+			};
+		// For any other browser.
+		} else {
+			script.onload = function(){
+				callback();
+			};
+		}
+		script.src = url;
+		document.getElementsByTagName("head")[0].appendChild(script);
+	};
+
+	var announcementBarAppJS = function($){
+
+		$('#announcementBarTop').css('height', $('#announcementBar').height());
+
+		$('#announcementBar img').on('click', function(){
+			$('#announcementBar, #announcementBarTop').animate({
+            	marginTop	: '-='+$('#announcementBar').height()+'px'
+            }, 200, 'linear');
+		});
+	}
+
+	if(typeof jQuery === 'undefined') {
+		loadScript('//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js', function(){
+			jQuery = jQuery.noConflict(true);
+			announcementBarAppJS(jQuery);
+		});
+	}else{
+		announcementBarAppJS(jQuery);
+	}
+
+})();
+</script>
+  <div class="wrapper">
+
+
+    <header class="checkout-header margin-top-50">
+        
+          <a class="logo-img-link" href="../Index.html">
+            <img src="https://cdn.store-assets.com/s/239857/f/3947712.png" alt="koreangaze" class="logo-img">
+          </a>
+        
+    </header>
+
+
+
+
+    <ol class="breadcrumb">
+	<li><a href="/cart">Cart</a></li>
+	<li><a href="/checkout/detail">Customer information</a></li>
+	<li><a href="/checkout/shipping">Shipping method</a></li>
+	<li class="active"><a href="/checkout/payments">Payment method</a></li>
+</ol>
+
+
+<div id="cart-mobile" class="hidden-md hidden-lg sm-margin-bottom-20 xs-margin-bottom-20">
+	<a class="show-cart-mobile btn btn-block btn-lg btn-default">
+		<div class="flex-vertical-middle flex-space-between">
+			<span class="cart-toggle-link">Show order summary <i class="margin-left-5 fa fa-angle-down"></i></span>
+
+			
+			<span class="pull-right">RM 
+				<span data-amount-include-charge>
+					
+				152.00
+					
+		</span> 
+				</span>
+			
+		</div>
+	</a>
+
+	<!-- Cart for mobile -->
+	<div class="cart md-up-margin-top-20" id="cart">
+		
+
+		<ul class="list-unstyled list-style cart-list ">
+			
+			<li class="flex-vertical-middle flex-space-between">
+				<span class="cart-detail-item cart-detail flex-vertical-middle">
+					<span class="badge badge-primary cart-qty">1</span>
+					<div class="cart-img display-inline margin-right-10">
+						<div class="perfect-square-wrap">
+							<img class="perfect-square-img" alt="laneige multi deep cleanser 6.png" src="Ceramidin Serum.JPG">
+						</div>
+					</div>
+					
+					<span class="cart-detail-item">
+						 DR.JART+ Ceramidin Serum <br>
+						<div class="color-light size-12 margin-top-5">40 ml</div>
+					</span>
+				</span>
+
+				<span class="cart-detail-item">
+					
+					RM 144.00 
+				</span>
+			</li>
+			
+		</ul>
+
+		<ul class="list-unstyled list-style">
+
+			<li class="flex-vertical-middle flex-space-between border-top margin-top-15">
+				<span>Subtotal</span>
+				<span>RM 144.00 </span>
+			</li>
+
+			
+
+			
+
+				
+					<li class="flex-vertical-middle flex-space-between">
+						<span>Shipping</span>
+						<span>RM <span class="modifyNumberFormat">8</span> </span>
+					</li>
+				
+
+				
+					
+				
+
+				
+
+					
+					<li class="flex-vertical-middle flex-space-between">
+						<span data-checkout-transaction-charge-rate></span>
+						<span>
+							<span>RM</span>
+							<span data-checkout-transaction-rate></span>
+							<span></span>
+						</span>
+					</li>
+
+					
+					<li class="flex-vertical-middle flex-space-between">
+						<span>
+							Transaction Charge
+						</span>
+						<span>
+							<span>RM</span>
+							<span data-checkout-transaction-charge></span>
+							<span></span>
+						</span>
+					</li>
+
+				
+
+				
+					<li class="flex-vertical-middle flex-space-between  border-top margin-top-15">
+						<span class="color-primary">Total</span>
+						<span>
+							<span class="color-light weight-light">RM</span>
+							<span class="color-primary weight-bold size-20" data-amount-include-charge>
+								
+									152.00
+								
+							</span>
+							<span class="color-light weight-light"></span>
+						</span>
+					</li>
+
+					
+					
+
+					
+				
+
+			
+
+		</ul>
+
+		
+		<div class="form-group margin-top-20">
+			<textarea class="form-control remark mobile-remark" placeholder="Add a remark..." ></textarea>
+		</div>
+
+		
+		
+			
+				
+					
+				
+			
+
+		    
+		        
+		    
+		
+		
+		
+	</div>
+</div>
+
+	<form id="PlaceOrderForm" class="side-wrap" action="/checkout/payments" method="post">
+
+		<div class="side-left">
+			<div class="left-container">
+				
+				<div class="row">
+					<div class="col-sm-6 text-break">
+						<h4 class="margin-bottom-20 weight-xbold">Billing address</h4>
+						  
+						<div>FARAH HADIRA UYAINA AZMAN</div>
+						<div>ayu.azman98@gmail.com</div>
+						<div></div>
+						<div>NO 38 JALAN TARIF SATU 23/8A</div>
+						<div>Seksyen 23</div>
+						<div>40300, SHAH ALAM, Selangor</div>
+						<div>Malaysia</div>
+						<div>+60132689335</div>
+					</div>
+
+
+					<div class="xs-margin-top-40 col-sm-6 text-break">
+						
+						<h4 class="margin-bottom-20 weight-xbold">Shipping address</h4>
+						  
+						<div>FARAH HADIRA UYAINA AZMAN</div>
+						<div>ayu.azman98@gmail.com</div>
+						<div></div>
+						<div>NO 38 JALAN TARIF SATU 23/8A</div>
+						<div>Seksyen 23</div>
+						<div>40300, SHAH ALAM, Selangor</div>
+						<div>Malaysia</div>
+						<div>+60132689335</div>
+
+						
+					</div>
+				</div>
+
+				
+
+				<input type="hidden" name="_token" value="Zk404dylIGbBtC3BpSSprNno1zMA9CVKcKE8ONsL">
+				<div id="appbbbd1173c16dbf48" class="app_content-wrapper">
+							<div class="app_title-wrapper">
+								<h4 class="app_title-text"></h4>
+							</div>
+							<div class="app_input-control-wrapper">
+									<input type="hidden" name="note_attributes[appbbbd1173c16dbf48][name][]" value="">
+									<input class="app_input-control" type="text" placeholder="" name="note_attributes[appbbbd1173c16dbf48][value][]" required="">
+							</div>
+						</div>
+					
+
+				<h4 class="margin-top-50 margin-bottom-20 weight-xbold">Choose payment method</h4>
+
+				
+					<div class="card-list-button-group payment-category-wrapper" data-toggle="buttons" >
+						  
+						
+									
+
+										<label class="btn btn-block btn-default btn-single-payment">
+											<input type="radio" name="payment_method" data-transaction-fee="0"
+											data-transaction-charge="0.0" class="r-payment" value="bank-transfer"checked/>
+											<b class="payment-title">
+												
+												Bank transfer 
+												
+												
+												
+											</b>
+											
+											<div class="payment-detail collapse">
+												
+												<div class="color-light description margin-top-10"><p><br></p><hr style="border-style: dashed;"><p><br></p><h4>Bank Name: &nbsp;CIMB Bank</h4><h4>Account Name: &nbsp;AMMR RESOURCES</h4><h4>Account Number: &nbsp;8602722794</h4><hr><p>Once payment is made, please complete all particulars below and reply to the confirmation email attached with the scanned bank-in slip.</p><p>Order ID :</p><p>Payment Method :</p><p>Bank Name :</p><p>Bank-in Date :</p><p>Bank-in Amount :</p><p>Contact Name :</p><p>Contact Phone :</p></div>
+												
+												
+											</div>
+											
+										</label>
+									
+
+								
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+								
+
+								
+
+									
+
+										<label class="btn btn-block btn-default btn-single-payment">
+											<input type="radio" name="payment_method" data-transaction-fee="0"
+											data-transaction-charge="0.0" class="r-payment" value="billplz_other_billplz"/>
+											<b class="payment-title">
+												
+												PAY NOW (ONLINE BANKING) 
+												
+												
+												
+											</b>
+											
+											<div class="payment-detail collapse">
+												
+												<div class="color-light description margin-top-10">Online banking(by Billplz)</div>
+												
+												
+											</div>
+											
+										</label>
+									
+
+								
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+
+							
+
+							
+
+						
+					</div>
+				
+
+				
+
+				<div class="form-group margin-top-20 size-12">
+                    By placing order, I agree to the koreangaze's <a target="_blank" href="/legal/terms-of-service">Terms of Service</a>, <a target="_blank" href="/legal/privacy-policy">Privacy Policy</a> and <a target="_blank" href="/legal/refund-policy">Refund Policy</a>.
+                </div>
+
+                
+				
+			</div>
+		</div>
+		
+		<div class="side-right">
+			<div id="cart">
+	<div class="cart" >
+		
+		
+
+		<ul class="list-unstyled list-style cart-list ">
+
+			
+			<li class="flex-vertical-middle flex-space-between">
+				<span class="cart-detail-item cart-detail flex-vertical-middle">
+					<span class="badge badge-primary cart-qty">1</span>
+					<div class="cart-img display-inline margin-right-10">
+						<div class="perfect-square-wrap">
+							<img class="perfect-square-img" alt="laneige multi deep cleanser 6.png" src="https://cdn.store-assets.com/s/239857/i/14805980.png">
+						</div>
+					</div>
+					
+					<span class="cart-detail-item">
+						Laneige Multi Deep Cleanser 30ml/150ml <br>
+						<div class="color-light size-12 margin-top-5">30ml</div>
+					</span>
+				</span>
+
+				<span class="cart-detail-item">
+					
+					RM 25.00 
+					
+				</span>
+
+			</li>
+			
+		</ul>
+
+		<ul class="list-unstyled list-style margin-bottom-0">
+
+			<li class="flex-vertical-middle flex-space-between border-top margin-top-15">
+				<span>Subtotal</span>
+				<span>RM 25.00 </span>
+			</li>
+			
+			
+
+			
+				
+				
+					<li class="flex-vertical-middle flex-space-between">
+						<span>Shipping</span>
+						<span>RM <span class="modifyNumberFormat">8</span> </span>
+					</li>
+				
+
+				
+					
+				
+
+				
+
+					
+					<li class="flex-vertical-middle flex-space-between">
+						<span data-checkout-transaction-charge-rate></span>
+						<span>
+							<span>RM</span>
+							<span data-checkout-transaction-rate></span>
+							<span></span>
+						</span>
+					</li>
+
+					
+					<li class="flex-vertical-middle flex-space-between">
+						<span>
+							Transaction Charge
+						</span>
+						<span>
+							<span>RM</span>
+							<span data-checkout-transaction-charge></span>
+							<span></span>
+						</span>
+					</li>
+
+				
+
+				
+					<li class="flex-vertical-middle flex-space-between border-top margin-top-15">
+						<span class="color-primary">Total</span>
+						<span>
+							<span class="color-light weight-light">RM</span>
+							<span class="color-primary weight-bold size-20" data-amount-include-charge>
+								
+									25.00
+								
+							</span>
+							<span class="color-light weight-light"></span>
+						</span>
+					</li>
+
+					
+					
+
+					
+
+				
+
+			
+		</ul>
+	</div>
+
+	
+	<div class="form-group margin-top-20">
+		<textarea class="form-control remark desktop-remark" name="remark" placeholder="Add a remark..." ></textarea>
+	</div>
+
+	
+	
+		
+			
+				
+			
+		
+
+
+		
+			
+		
+	
+	
+	
+</div>
+
+
+		</div>
+		
+		<div class="form-group margin-top-50 display-inline width-full">
+			<a href="shippingCeramidinSerum.html"><i class="fa fa-chevron-left margin-right-10"></i> Back to customer information</a>
+			<button type="submit" id="PlaceOrder" class="xs-margin-top-10 xs-btn-block btn-payment btn btn-primary btn-lg pull-right" formaction="acceptCeramidinSerum.html">Place Order Now</button>
+		</div>
+		<div data-app-checkout='{&quot;id&quot;:8176088,&quot;has_discounts&quot;:false,&quot;customer_id&quot;:null,&quot;number&quot;:0,&quot;order_number&quot;:&quot;0&quot;,&quot;currency&quot;:&quot;MYR&quot;,&quot;currency_rate&quot;:&quot;1.0&quot;,&quot;total_line_items_price&quot;:&quot;25.00&quot;,&quot;total_discount&quot;:&quot;0.00&quot;,&quot;custom_discount&quot;:&quot;0.00&quot;,&quot;subtotal_price&quot;:&quot;25.00&quot;,&quot;total_shipping&quot;:&quot;8.00&quot;,&quot;total_tax&quot;:&quot;0.00&quot;,&quot;shipping_tax&quot;:&quot;0.00&quot;,&quot;total_price&quot;:&quot;33.00&quot;,&quot;total_amount_include_transaction&quot;:&quot;25.00&quot;,&quot;transaction_charge_fee&quot;:&quot;0.00&quot;,&quot;transaction_charge_rate&quot;:&quot;0.00&quot;,&quot;transaction_charge_rate_fee&quot;:&quot;0.00&quot;,&quot;credit_used&quot;:&quot;0.0&quot;,&quot;credit_earn&quot;:&quot;0.0&quot;,&quot;order_item_total_discount&quot;:&quot;0.00&quot;,&quot;pg_type_rate&quot;:0,&quot;taxes_included&quot;:false,&quot;discount_code&quot;:null,&quot;order_discount_id&quot;:null,&quot;credit_voucher_code&quot;:null,&quot;credit_order_discount_id&quot;:null,&quot;note&quot;:null,&quot;note_attributes&quot;:null,&quot;remark&quot;:&quot;&quot;,&quot;token&quot;:&quot;b594263b-4866-4f2d-bfe1-7345dc3026ba&quot;,&quot;cart_token&quot;:&quot;765a0479-001e-4641-9c2e-3e98a600f06c&quot;,&quot;source_name&quot;:&quot;SF&quot;,&quot;browser_ip&quot;:&quot;60.51.73.78&quot;,&quot;landing_site&quot;:&quot;\/&quot;,&quot;referring_site&quot;:null,&quot;fulfillment_status&quot;:&quot;unfulfilled&quot;,&quot;financial_status&quot;:&quot;unpaid&quot;,&quot;is_processed&quot;:false,&quot;is_archived&quot;:false,&quot;is_cancelled&quot;:false,&quot;is_completed&quot;:0,&quot;processed_at&quot;:&quot;2020-06-14T13:53:00.000+08:00&quot;,&quot;cancelled_at&quot;:null,&quot;closed_at&quot;:null,&quot;archived_at&quot;:null,&quot;created_at&quot;:&quot;2020-06-14T13:46:33.000+08:00&quot;,&quot;updated_at&quot;:&quot;2020-06-14T14:32:14.000+08:00&quot;,&quot;payment_status&quot;:false,&quot;user_id&quot;:null,&quot;total_item_weight&quot;:0,&quot;total_item_quantity&quot;:1,&quot;shipping_id&quot;:122501,&quot;store_app_id&quot;:null,&quot;shipping_method_name&quot;:&quot;Flat Rate RM8(SEMENANJUNG)&quot;,&quot;order_tax&quot;:null,&quot;order_item&quot;:[{&quot;id&quot;:17650395,&quot;order_id&quot;:8176088,&quot;product_id&quot;:3582155,&quot;product_name&quot;:&quot;Laneige Multi Deep Cleanser 30ml\/150ml&quot;,&quot;variant_id&quot;:16411291,&quot;variant_name&quot;:&quot;30ml&quot;,&quot;discount_id&quot;:null,&quot;sku&quot;:null,&quot;barcode&quot;:null,&quot;price&quot;:&quot;25.00&quot;,&quot;subtotal&quot;:&quot;25.00&quot;,&quot;total_discount&quot;:&quot;0.00&quot;,&quot;grams&quot;:&quot;0.0&quot;,&quot;quantity&quot;:1,&quot;taxable&quot;:false,&quot;shipping_required&quot;:true,&quot;total_tax&quot;:&quot;0.00&quot;,&quot;created_at&quot;:&quot;2020-06-14T13:53:00.000+08:00&quot;,&quot;item_image&quot;:{&quot;id&quot;:14805980,&quot;store_id&quot;:239857,&quot;product_id&quot;:3582155,&quot;format_type&quot;:&quot;Images&quot;,&quot;youtube_id&quot;:null,&quot;position&quot;:1,&quot;extension&quot;:&quot;png&quot;,&quot;url&quot;:&quot;https:\/\/s3.ap-southeast-1.amazonaws.com\/cdn.store-assets.com\/s\/239857\/i\/14805980.png&quot;,&quot;size&quot;:133791,&quot;height&quot;:600,&quot;width&quot;:500,&quot;title&quot;:&quot;laneige multi deep cleanser 6.png&quot;,&quot;is_deleted&quot;:false,&quot;deleted_at&quot;:null,&quot;s3_deleted&quot;:false,&quot;s3_deleted_at&quot;:null,&quot;created_at&quot;:&quot;2020-06-03T12:12:52.000+08:00&quot;},&quot;handle&quot;:&quot;laneige-multi-deep-cleanser-30ml-150ml&quot;,&quot;collections&quot;:&quot;Feature on homepage,LANEIGE&quot;,&quot;brands&quot;:null}],&quot;cod_type&quot;:0,&quot;transaction_records&quot;:null,&quot;shipping_warning&quot;:null,&quot;pickup_warning&quot;:null,&quot;cod_warning&quot;:null,&quot;item_taxable&quot;:false}'></div>
+		
+		
+			
+	</form>
+
+	<script>
+		$(document).ready(function(){
+			$('form#PlaceOrderForm').on("submit", function(event) {
+				$('#PlaceOrder').addClass("btn-loading");
+			});
+
+			function payment_option_check(){
+				$('input.r-payment').each(function( index ) {
+					if($(this).is(":checked")){    
+						$(this).parent().addClass("active");
+						$(this).parent().find('.payment-detail').addClass("in");
+						$(".btn-group-wrapper").removeClass("selected");
+						$(this).parents(".btn-group-wrapper").addClass("selected");
+						$(".btn-group-option-item, .btn-single-payment").removeClass("active");
+						$(this).parents(".btn-group-option-item, .btn-single-payment").addClass("active");
+						transaction_charge_function($(this));
+					}else{
+						$(this).parent().find('.payment-detail').removeClass("in");			
+					}
+				});
+			};
+			payment_option_check();
+
+			$('.group-wrapper-title').on("click", function( index ) {
+					if($(this).parent().hasClass("showing")){
+						$('.btn-group-wrapper').removeClass("showing");
+					}else{
+						$('.btn-group-wrapper').removeClass("showing");
+						$(this).parent().addClass("showing");
+
+						// Auto select first option
+						if(!$(this).parent().hasClass("selected")){
+							var this_first_option = $(this).next(".group-wrapper-content").children('.btn-group-option-item').first();
+							this_first_option.children("input.r-payment").prop('checked', true);
+							payment_option_check();
+						}
+					}
+			});
+
+			
+			$('input.r-payment').on("change", function(){
+				$('input.r-payment').each(function( index ) {
+					if($(this).is(":checked")){    
+						$(this).parent().find('.payment-detail').addClass("in");
+						$(".btn-group-wrapper").removeClass("selected");
+						$(this).parents(".btn-group-wrapper").addClass("selected");
+						$(".btn-group-option-item").removeClass("active");
+						$(this).parents(".btn-group-option-item").addClass("active");
+					}else{
+						$(this).parent().find('.payment-detail').removeClass("in");		
+					}
+				});
+					transaction_charge_function($(this));
+			});
+
+			function thousandSeparator(g,h,i){
+				g += '';
+				x = g.split('.');
+				x1 = x[0];
+				x2 = x.length > 1 ? i + x[1] : '';
+				var rgx = /(\d+)(\d{3})/;
+				while (rgx.test(x1)) {
+					x1 = x1.replace(rgx, '$1' + ',' + '$2');
+				}
+				x1 = x1.replace(/,/g, h);
+				return x1 + x2;
+			}
+
+			function transaction_charge_function(target_element){
+					var transaction_charge_rate = target_element.data("transaction-fee") == "FREE" ? 0 : target_element.data("transaction-fee");
+					var org_total_price = "33.00";
+					var format_decimals = "2";
+					var thousand_separator = ",";
+
+					if(thousand_separator=="" || thousand_separator==null){
+						var decimal_separator = ".";
+					}
+					else{
+						var decimal_separator = thousand_separator=="," ? "." : ",";
+					}
+
+					var currency_rate = 1;
+					var credit_used = "0.0";
+
+					if(decimal_separator == "," && org_total_price.indexOf(decimal_separator) != -1){
+						var org_total_price_after_split = org_total_price.split(decimal_separator);
+						org_total_price = org_total_price_after_split[0] + "." + org_total_price_after_split[1];
+					}
+
+					if(thousand_separator == "," && credit_used.indexOf(thousand_separator) != -1){
+						var credit_used_after_split = credit_used.split(thousand_separator);
+						credit_used = credit_used_after_split[0] + credit_used_after_split[1];
+					}
+
+					if(org_total_price > 0)
+					{
+						org_total_price = org_total_price.replace(/,/g, "");
+						var origin_transaction_charge = target_element.data("transaction-charge") == "FREE" ? 0 : parseFloat(target_element.data("transaction-charge"));
+						var transaction_charge = origin_transaction_charge * currency_rate 
+						var total_transaction_charge = parseFloat(org_total_price*transaction_charge_rate/100);
+					}
+					else
+					{
+						org_total_price = org_total_price.replace(/,/g, "");
+						var transaction_charge = 0;
+						var total_transaction_charge = 0;
+					}
+
+					var amount_include_charge = parseFloat(org_total_price) + parseFloat(total_transaction_charge) + parseFloat(transaction_charge)
+
+					var checkout_rate_target = $("[data-checkout-transaction-rate]");
+					var checkout_charge_target = $("[data-checkout-transaction-charge]");
+
+					element_hide(checkout_rate_target, total_transaction_charge);
+					element_hide(checkout_charge_target, transaction_charge);
+
+					// target_element.parents().eq(5).find("[data-checkout-transaction-charge]").text(thousandSeparator(transaction_charge.toFixed(format_decimals), separator));
+					$("[data-checkout-transaction-charge-rate]").text("Transaction Charge Rate "+" ("+transaction_charge_rate+"%)");
+					$("[data-credit-used]").text(thousandSeparator(parseFloat(credit_used).toFixed(format_decimals), thousand_separator, decimal_separator));
+					$("[data-amount-include-charge]").text(thousandSeparator(amount_include_charge.toFixed(format_decimals), thousand_separator, decimal_separator));
+
+					function element_hide(element, transaction){
+						element.each(function(){
+							if(transaction == 0){
+								$(this).parents().eq(1).css("display", "none");
+							}else{
+								$(this).parents().eq(1).css("display", "");
+								$(this).text(thousandSeparator(transaction.toFixed(format_decimals), thousand_separator, decimal_separator));
+							}    
+						});
+					}
+			}
+
+		});
+	</script>
+	
+
+
+
+
+
+
+
+
+    <footer class="margin-top-20 size-12 color-light padding-top-20 margin-bottom-30 width-full">
+      &copy; All rights reserved koreangaze
+      
+
+      
+
+      <span class="sm-up-pull-right footer-links">
+        
+          <a target="_blank" href="/legal/terms-of-service">Terms of Service</a>
+              
+          <a target="_blank" href="/legal/privacy-policy">Privacy Policy</a>
+              
+          <a target="_blank" href="/legal/refund-policy">Refund Policy</a>
+              
+        
+        
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        
+      </span>
+
+    </footer>
+  </div>
+
+
+
+
+
+
+
+
+  <script src="/assets/js/breakpoints/breakpoints.min.js"></script>
+  <script src="/assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="/assets/js/sticky-kit/jquery.sticky-kit.min.js"></script>
+
+
+
+
+  <!-- Stick the cart -->
+  <script>
+    $(document).ready(function() {
+          $(".side-right #cart").stick_in_parent({
+              'inner_scrolling': false,
+              'no_recalc': true
+      });
+      });
+
+    jQuery( window ).on ( 'resize', function() {
+        jQuery(document.body).trigger("sticky_kit:recalc");
+    });
+  </script>
+
+
+
+  <!-- Move the cart (for responsive) -->
+  <script>
+
+    $(".show-cart-mobile").on("click",function(){
+      $("#cart-mobile .cart").toggle();
+    })
+
+  </script>
+
+  <script>
+    $(".remark").on("input", function(){
+      if($(this).hasClass("desktop-remark")){
+        $(".mobile-remark").val($(this).val());
+      }
+      else{
+        $(".desktop-remark").val($(this).val());
+      }
+    });
+  </script>
+
+  <!-- Discount code -->
+  <script>
+    $(".btn-discount").on("click",function(){
+
+      var discount_code = $(this).closest(".input-group").find("input[name=discount_code]").val();
+      var cart_token = "765a0479-001e-4641-9c2e-3e98a600f06c";
+
+      $.ajax({
+        type: 'post',
+        url: "/checkout/discount",
+        dataType: "json",
+        data: {
+          discount_code: discount_code,
+          token: cart_token,
+          _token: "Zk404dylIGbBtC3BpSSprNno1zMA9CVKcKE8ONsL"
+        },
+        success: function(d){
+
+          if(d.status == "success"){
+            location.reload();
+          }else{
+            $(".discount-error").text(d.data);
+            $(".discount-error").css("color", "#a94442")
+          }
+
+        },
+        error: function(d){
+          console.log("error");
+        }
+      });
+      return false;
+    });
+
+    $(".btn-del-discount").on("click",function(){
+      var order_discount_id = $(this).data("order-discount-id");
+      var cart_token = "765a0479-001e-4641-9c2e-3e98a600f06c";
+      $.ajax({
+        type: 'delete',
+        url: '/checkout/discount-remove',
+        dataType: "json",
+        data: {
+          order_discount_id: order_discount_id,
+          token: cart_token,
+          _token: "Zk404dylIGbBtC3BpSSprNno1zMA9CVKcKE8ONsL"
+        },
+        success: function(d){
+          location.reload();
+        },
+        error: function(d){
+          console.log("error");
+        }
+      });
+      return false;
+    });
+
+    $(".btn-credit").on("click",function(){
+      var html = $(this).html();
+            $.ajax({
+                type: 'post',
+                url: '/checkout/credit',
+                dataType: "json",
+                data: {
+                     _token: "Zk404dylIGbBtC3BpSSprNno1zMA9CVKcKE8ONsL"
+                },
+                beforeSend: function(){
+                  $(".btn-credit").html("").prop("disabled", true).addClass("fa fa-spinner");
+                },
+                success: function(d){
+                  location.reload();
+                },
+                error: function(d){
+                  $(".btn-credit").html(html).prop("disabled", false).removeClass("fa fa-spinner");
+                    console.log("error");
+                }
+            });
+            return false;
+        });
+
+        $(".btn-del-credit").on("click",function(){
+            $.ajax({
+                type: 'delete',
+                url: '/checkout/credit-remove',
+                dataType: "json",
+                data: {
+                     _token: "Zk404dylIGbBtC3BpSSprNno1zMA9CVKcKE8ONsL"
+                },
+                success: function(d){
+                    location.reload();
+                },
+                error: function(d){
+                    console.log("error");
+                }
+            });
+            return false;
+        });
+
+  </script>
+
+  <script>
+    $("span.modifyNumberFormat").each(function(key, value) {
+      var content = $(value).html();
+      if (isNaN(content)) {
+        return false;
+      } else {
+        $(value).html(normalizeNumber(content));
+      }
+    });
+    $("span.modifyNumberFormatWithAffix").each(function(key, value) {
+      var content = $(value).html();
+      if (isNaN(content)) {
+        return false;
+      } else {
+        var currency_prefix = "RM" == '' ? '' : "RM ";
+        var currency_suffix = "" == '' ? '' : " ";
+        $(value).html( currency_prefix + normalizeNumber(content) + currency_suffix );
+      }
+    });
+    function normalizeNumber(value){
+      var format_decimals = "2";
+      var thousand_separator = ",";
+
+      if(thousand_separator=="" || thousand_separator==null){
+        var decimal_separator = ".";
+      }
+      else{
+        var decimal_separator = thousand_separator=="," ? "." : ",";
+      }
+
+      var amount = value;
+
+      if(thousand_separator == "," && amount.indexOf(thousand_separator) != -1){
+        var amount_after_split = amount.split(thousand_separator);
+        amount = amount_after_split[0] + amount_after_split[1];
+      }
+
+      return amendNumberFormat(parseFloat(amount).toFixed(format_decimals), thousand_separator, decimal_separator);
+    }
+    function amendNumberFormat(g,h,i){
+      g += '';
+      x = g.split('.');
+      x1 = x[0];
+      x2 = x.length > 1 ? i + x[1] : '';
+      var rgx = /(\d+)(\d{3})/;
+      while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + ',' + '$2');
+      }
+      x1 = x1.replace(/,/g, h);
+      return x1 + x2;
+    }
+  </script>
+<script>
+		$(".product-label-badge").parent().find(".badge--sale").remove();
+		</script>
+
+		<style>
+		.product-label-badge-text {
+			display: table-cell;
+			vertical-align: middle;
+			padding: 2px 8px 0;
+			border-radius: 50%;
+		}
+		.product-label-badge{
+			display: table;
+			position: absolute;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			font-weight: bold;
+			text-align: center;
+			font-size: .75em;
+			line-height: 1.1;
+			z-index: 10;
+		}
+
+		.product-label-position{
+			top: -12px;
+			right: -12px;
+		}
+		</style>
+</body>
+</html>
